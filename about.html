@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life Like : Home / About</title>
+  <style>
+    @import url(css/bootstrap-icons.min.css);
+    @import url(css/bootstrap.min.css);
+    @import url(css/swiper-bundle.min.css);
+    @import url(css/fonts.css.css);
+    @import url(css/style.css);
+  </style>
+</head>
+
+<body>
+  <!-- header  -->
+  <header class="navbar navbar-expand-lg hedaer-bg">
+    <div class="container">
+      <a class="navbar-brand text-primary fw-bold fs-4 my-3" href="#"><img src="img/icon.png" alt=""
+          class="col-3 p-1"><span class="text-white">Life Like</span></a>
+      <button class="navbar-toggler border-0 shadow-none" data-bs-toggle="collapse" data-bs-target="#dropdown">
+        <i class="bi bi-list text-white fs-3 navbar-toggler-icon"></i>
+      </button>
+      <nav class="collapse navbar-collapse" id="dropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item fw-semibold px-3 h6"><a href="index.html"
+              class="nav-link hover text-primary text-uppercase">home+</a>
+          </li>
+          <li class="nav-item fw-semibold px-3 h6"><a href="home_decore.html"
+              class="nav-link hover text-white text-uppercase">home decore+</a>
+          </li>
+          <li class="nav-item fw-semibold px-3 h6"><a href="fren.html"
+              class="nav-link hover text-white text-uppercase">fren+</a>
+          </li>
+          <li class="nav-item fw-semibold px-3 h6"><a href="#"
+              class="nav-link text-muted text-uppercase">more+</a>
+          </li>
+          <li class="nav-item fw-semibold px-3 h6"><a href="blog.html"
+              class="nav-link hover text-white text-uppercase">blog+</a>
+          </li>
+        </ul>
+
+        <div class="row ms-lg-2">
+          <button class="btn btn-success btn-56 rounded-0 py-3 px-3" data-bs-toggle="collapse"
+            data-bs-target="#search"><i class="bi bi-search  fw-bold"></i></button>
+          <button class="btn btn-success btn-56 rounded-0 py-2 px-2" id="liveAlertBtn"><i
+              class="bi bi-person p-1 fs-4 fw-bold"></i></button>
+          <button class="btn btn-success btn-56 rounded-0 py-2 px-2 position-relative" data-bs-toggle="offcanvas"
+            data-bs-target="#launch-offcanvas"><i class="bi bi-cart fs-4 fw-bold"></i><span
+              class="position-absolute top-0 start-100 translate-middle badge fs-6 rounded-pill bg-primary">2</span></button>
+        </div>
+      </nav>
+    </div>
+    <div class="not-fond">
+      <div class="collapse" id="search">
+        <div class="col-6 col-lg-3 ms-auto card card-body position-absolute serach-box">
+          <div class="input-group">
+            <input type="text" class="form-control py-2 border-0" placeholder="Search....">
+          </div>
+        </div>
+      </div>
+      <div id="liveAlertPlaceholder" class="position-absolute alret-position w-100"></div>
+    </div>
+  </header>
+  <!-- banner section  -->
+  <section class="bg-primary bg-opacity-75">
+    <div class="container">
+      <div class="about text-center fw-semibold py-2 ">
+        <p class="text-uppercase text-white fs-4 m-0">home / INFORMATION</p>
+      </div>
+    </div>
+  </section>
+  <!-- about section  -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-3 py-4">
+          <div class="Product-Categories p-0 p-md-4 border border-1 border-muted">
+            <h5 class="fw-bold"><span class=" text-primary fw-bold h4 pe-3"><i class="bi bi-signpost"></i></span>Account
+            </h5>
+            <ul class="nav nav-tabs border-0" id="myTab">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link fs-6 fw-bold text-uppercase rounded-0 px-5 d-flex justify-contebt-between "
+                  id="home-tab" data-bs-toggle="tab" data-bs-target="#login">
+                  <p class="m-0">login</p><i class="bi bi-caret-right-fill"></i>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link fs-6 fw-bold text-uppercase rounded-0 px-5 d-flex justify-contebt-between "
+                  id="home-tab" data-bs-toggle="tab" data-bs-target="#register">
+                  <p class="m-0">register</p><i class="bi bi-caret-right-fill"></i>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link fs-6 fw-bold text-uppercase rounded-0 ps-5 d-flex justify-contebt-between "
+                  id="home-tab" data-bs-toggle="tab" data-bs-target="#forgotten">
+                  <p class="m-0">forgotten password</p><i class="bi bi-caret-right-fill"></i>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link fs-6 fw-bold text-uppercase rounded-0 px-5 d-flex justify-contebt-between "
+                  id="home-tab" data-bs-toggle="tab" data-bs-target="#account">
+                  <p class="m-0">my account</p><i class="bi bi-caret-right-fill"></i>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link fs-6 fw-bold text-uppercase rounded-0 px-5 d-flex justify-contebt-between "
+                  id="home-tab" data-bs-toggle="tab" data-bs-target="#address">
+                  <p class="m-0">address book</p><i class="bi bi-caret-right-fill"></i>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link fs-6 fw-bold text-uppercase rounded-0 px-5 d-flex justify-contebt-between "
+                  id="home-tab" data-bs-toggle="tab" data-bs-target="#wish">
+                  <p class="m-0">wish list</p><i class="bi bi-caret-right-fill"></i>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link fs-6 fw-bold text-uppercase rounded-0 px-5 d-flex justify-contebt-between "
+                  id="home-tab" data-bs-toggle="tab" data-bs-target="#History">
+                  <p class="m-0">Order History</p><i class="bi bi-caret-right-fill"></i>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link fs-6 fw-bold text-uppercase rounded-0 px-5 d-flex justify-contebt-between "
+                  id="home-tab" data-bs-toggle="tab" data-bs-target="#downloads">
+                  <p class="m-0">downloads</p><i class="bi bi-caret-right-fill"></i>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link fs-6 fw-bold text-uppercase rounded-0 ps-5 d-flex justify-contebt-between "
+                  id="home-tab" data-bs-toggle="tab" data-bs-target="#recurring">
+                  <p class="m-0">recurring payments</p><i class="bi bi-caret-right-fill"></i>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link fs-6 fw-bold text-uppercase rounded-0 px-5 d-flex justify-contebt-between "
+                  id="home-tab" data-bs-toggle="tab" data-bs-target="#reward">
+                  <p class="m-0">reward points</p><i class="bi bi-caret-right-fill"></i>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link fs-6 fw-bold text-uppercase rounded-0 px-5 d-flex justify-contebt-between "
+                  id="home-tab" data-bs-toggle="tab" data-bs-target="#returns">
+                  <p class="m-0">returns</p><i class="bi bi-caret-right-fill"></i>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link fs-6 fw-bold text-uppercase rounded-0 px-5 d-flex justify-contebt-between "
+                  id="home-tab" data-bs-toggle="tab" data-bs-target="#transactions">
+                  <p class="m-0">transactions</p><i class="bi bi-caret-right-fill"></i>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link fs-6 fw-bold text-uppercase rounded-0 px-5 d-flex justify-contebt-between "
+                  id="home-tab" data-bs-toggle="tab" data-bs-target="#newsletter">
+                  <p class="m-0">newsletter</p><i class="bi bi-caret-right-fill"></i>
+                </button>
+              </li>
+              
+            <h5 class="fw-bold my-2 border-top border-1 col-12 py-2 text-uppercase"><span class=" text-primary fw-bold h4 pe-3"><i
+              class="bi bi-signpost"></i></span>information</h5>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active fs-6 fw-bold text-capitalize rounded-0 px-5 d-flex justify-contebt-between "
+                  id="home-tab" data-bs-toggle="tab" data-bs-target="#about">about us</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link fs-6 fw-bold text-uppercase rounded-0 ps-5 d-flex justify-contebt-between "
+                  id="home-tab" data-bs-toggle="tab" data-bs-target="#Delivery">Delivery Information</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link fs-6 fw-bold text-uppercase rounded-0 ps-5 d-flex justify-contebt-between "
+                  id="home-tab" data-bs-toggle="tab" data-bs-target="#Privacy">Privacy Policy</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link fs-6 fw-bold text-uppercase rounded-0 px-5 d-flex justify-contebt-between "
+                  id="home-tab" data-bs-toggle="tab" data-bs-target="#Terms">Terms & Conditions</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link fs-6 fw-bold text-uppercase rounded-0 px-5 d-flex justify-contebt-between "
+                  id="home-tab" data-bs-toggle="tab" data-bs-target="#Contact">Contact Us</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link fs-6 fw-bold text-uppercase rounded-0 px-5 d-flex justify-contebt-between "
+                  id="home-tab" data-bs-toggle="tab" data-bs-target="#Site">Site Map
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="range p-0 my-2 p-md-4 border border-1 border-muted">
+            <h5 class="fw-bold"><span class=" text-primary fw-bold h4 pe-3"><i class="bi bi-signpost"></i></span>Filter
+              By
+              Price</h5>
+            <p class="text-muted fw-semibold text-capitalize">your range:</p>
+            <div class="slider-wrapper slider-gaia">
+              <input class="input-range" id="priceRange" type="text" data-slider-step="1000"
+                data-slider-value="4999, 9999" data-slider-min="4999" data-slider-max="20000" data-slider-range="true"
+                data-slider-tooltip_split="true" data-slider-tooltip="always" />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-9 py-4">
+          <div class="product-details">
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade px-3" id="login">
+                <div class="row">
+                  <div class="col-12 col-md-6 px-3">
+                    <div class="customer border border-1 rounded-3 p-3">
+                      <h3 class="text-capitalize">new customer</h3>
+                      <p class="fs-6 fw-semibold text-capitalize">Register Account</p>
+                      <p class="fs-6 fw-semibold">By creating an account you will be able to shop faster, be up to date
+                        on an order's status, and keep track of the orders you have previously made.</p>
+                      <button class="btn btn-outline-primary fs-5 fw-semibold px-5 rounded-pill">continuue</button>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 px-3">
+                    <div class="customer border border-1 rounded-3 p-3">
+                      <h3 class="text-capitalize">Returning Customer</h3>
+                      <p class="fs-6 fw-semibold text-capitalize">I am a returning customer</p>
+                      <label class="d-block fw-semibold">E-Mail Address</label>
+                      <input type="email" required placeholder="E-Mail Address"
+                        class="border-0 border-bottom border-2 col-12  py-1 fw-semibold my-2">
+                      <label class="d-block fw-semibold">Password</label>
+                      <input type="email" required placeholder="Password"
+                        class="border-0 border-bottom border-2 col-12  py-1 fw-semibold my-2">
+                      <button class="btn btn-outline-primary fs-5 fw-semibold px-5 rounded-pill">continuue</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="register">
+                <div class="col-12 px-3">
+                  <div class="customer p-3">
+                    <h3 class="text-capitalize">register account</h3>
+                    <p class="fs-6 fw-semibold text-capitalize">If you already have an account with us, please login at
+                      the login page.</p>
+                    <h3 class="text-capitalize pb-3 border-1 border-bottom">Your Personal Details</h3>
+                    <form class="py-4">
+                      <div class="row align-items-center">
+                        <label class="d-inline col-2 text-capitalize fw-semibold text-end">
+                          <p class="text-danger d-inline pe-2">*</p>first name
+                        </label>
+                        <input type="text" placeholder="first name"
+                          class="col-10 border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                        <label class="d-inline col-2 text-capitalize my-3 fw-semibold text-end">
+                          <p class="text-danger d-inline pe-2">*</p>Last name
+                        </label>
+                        <input type="text" placeholder="Last  name"
+                          class="col-10 my-3 border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                        <label class="d-inline col-2 text-capitalize fw-semibold text-end">
+                          <p class="text-danger d-inline pe-2">*</p>e-mail
+                        </label>
+                        <input type="email" required placeholder="e-mail"
+                          class="col-10 border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                        <label class="d-inline col-2 text-capitalize my-3 fw-semibold text-end">
+                          <p class="text-danger d-inline pe-2">*</p>Telephone
+                        </label>
+                        <input type="number" min="10" max="10" required placeholder="Telephone"
+                          class="col-10 my-3 border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                      </div>
+                    </form>
+                    <h3 class="text-capitalize pb-3 border-1 border-bottom">Your password</h3>
+                    <form class="py-4">
+                      <div class="row align-items-center">
+                        <label class="d-inline col-2 text-capitalize my-3 fw-semibold text-end">
+                          <p class="text-danger d-inline pe-2">*</p>password
+                        </label>
+                        <input type="password" required placeholder="password"
+                          class="col-10 my-3 border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                        <label class="d-inline col-2 text-capitalize fw-semibold text-end">
+                          <p class="text-danger d-inline pe-2">*</p>password Confirm
+                        </label>
+                        <input type="password" required placeholder="password Confirm"
+                          class="col-10 border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                      </div>
+                    </form>
+                    <h3 class="text-capitalize pb-3 border-1 border-bottom">Newsletter</h3>
+                    <form class="py-4">
+                      <div class="ro">
+                        <label class="d-inline text-capitalize my-3 pe-4 fw-semibold">Subscribe</label>
+                        <input type="radio" value="1" name="Subscribe"
+                          class="border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                        <label class="text-capitalize text-dark fw-semibold">yes</label>
+                        <input type="radio" value="0" name="Subscribe" checked
+                          class="border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                        <label class="text-capitalize text-dark fw-semibold">no</label>
+                      </div>
+                    </form>
+                    <div class="text-end">
+                      <label>I have read and agree to the Privacy Policy</label>
+                      <input type="checkbox">
+                      <button class="btn btn-outline-primary fs-5 fw-semibold px-5 rounded-pill">continuue</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="forgotten">
+                <div class="forgotten-password">
+                  <h3 class="text-capitalize">FORGOT YOUR PASSWORD?</h3>
+                  <p class="fs-6 fw-semibold text-capitalize">Enter the e-mail address associated with your account.
+                    Click submit to have a password reset link e-mailed to you.</p>
+                  <h3 class="text-capitalize pb-3 border-1 border-bottom">Your E-Mail Address</h3>
+                  <form class="py-4">
+                    <div class="row align-items-center">
+                      <label class="d-inline col-2 text-capitalize fw-semibold">
+                        <p class="text-danger d-inline pe-2">*</p>E-Mail Address
+                      </label>
+                      <input type="email" required placeholder="E-Mail Address"
+                        class="col-10 border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                    </div>
+                    <div class="row justify-content-between align-items-center">
+                      <a href="#login" class="btn btn-outline-primary col-2 fs-5 my-4 fw-semibold rounded-pill">back</a>
+                      <a href="#" class="btn btn-outline-primary col-2 fs-5 fw-semibold rounded-pill">continuue</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="account">
+                <div class="row">
+                  <div class="col-12 col-md-6 px-3">
+                    <div class="customer border border-1 rounded-3 p-3">
+                      <h3 class="text-capitalize">new customer</h3>
+                      <p class="fs-6 fw-semibold text-capitalize">Register Account</p>
+                      <p class="fs-6 fw-semibold">By creating an account you will be able to shop faster, be up to date
+                        on an order's status, and keep track of the orders you have previously made.</p>
+                      <button class="btn btn-outline-primary fs-5 fw-semibold px-5 rounded-pill">continuue</button>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 px-3">
+                    <div class="customer border border-1 rounded-3 p-3">
+                      <h3 class="text-capitalize">Returning Customer</h3>
+                      <p class="fs-6 fw-semibold text-capitalize">I am a returning customer</p>
+                      <label class="d-block fw-semibold">E-Mail Address</label>
+                      <input type="email" required placeholder="E-Mail Address"
+                        class="border-0 border-bottom border-2 col-12  py-1 fw-semibold my-2">
+                      <label class="d-block fw-semibold">Password</label>
+                      <input type="email" required placeholder="Password"
+                        class="border-0 border-bottom border-2 col-12  py-1 fw-semibold my-2">
+                      <button class="btn btn-outline-primary fs-5 fw-semibold px-5 rounded-pill">continuue</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="address">
+                <div class="col-12 px-3">
+                  <div class="customer p-3">
+                    <h3 class="text-capitalize">address </h3>
+                    <p class="fs-6 fw-semibold text-capitalize">If you already have an account with us, please login at
+                      the login page.</p>
+                    <h3 class="text-capitalize pb-3 border-1 border-bottom">Your Personal Details</h3>
+                    <form class="py-4">
+                      <div class="row align-items-center">
+                        <label class="d-inline col-2 text-capitalize fw-semibold text-end">
+                          <p class="text-danger d-inline pe-2">*</p>first name
+                        </label>
+                        <input type="text" placeholder="first name"
+                          class="col-10 border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                        <label class="d-inline col-2 text-capitalize my-3 fw-semibold text-end">
+                          <p class="text-danger d-inline pe-2">*</p>Last name
+                        </label>
+                        <input type="text" placeholder="Last  name"
+                          class="col-10 my-3 border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                        <label class="d-inline col-2 text-capitalize fw-semibold text-end">
+                          <p class="text-danger d-inline pe-2">*</p>e-mail
+                        </label>
+                        <input type="email" required placeholder="e-mail"
+                          class="col-10 border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                        <label class="d-inline col-2 text-capitalize my-3 fw-semibold text-end">
+                          <p class="text-danger d-inline pe-2">*</p>Telephone
+                        </label>
+                        <input type="number" min="10" max="10" required placeholder="Telephone"
+                          class="col-10 my-3 border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                      </div>
+                    </form>
+                    <h3 class="text-capitalize pb-3 border-1 border-bottom">Your password</h3>
+                    <form class="py-4">
+                      <div class="row align-items-center">
+                        <label class="d-inline col-2 text-capitalize my-3 fw-semibold text-end">
+                          <p class="text-danger d-inline pe-2">*</p>password
+                        </label>
+                        <input type="password" required placeholder="password"
+                          class="col-10 my-3 border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                        <label class="d-inline col-2 text-capitalize fw-semibold text-end">
+                          <p class="text-danger d-inline pe-2">*</p>password Confirm
+                        </label>
+                        <input type="password" required placeholder="password Confirm"
+                          class="col-10 border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                      </div>
+                    </form>
+                    <h3 class="text-capitalize pb-3 border-1 border-bottom">Newsletter</h3>
+                    <form class="py-4">
+                      <div class="ro">
+                        <label class="d-inline text-capitalize my-3 pe-4 fw-semibold">Subscribe</label>
+                        <input type="radio" value="1" name="Subscribe"
+                          class="border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                        <label class="text-capitalize text-dark fw-semibold">yes</label>
+                        <input type="radio" value="0" name="Subscribe" checked
+                          class="border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                        <label class="text-capitalize text-dark fw-semibold">no</label>
+                      </div>
+                    </form>
+                    <div class="text-end">
+                      <label>I have read and agree to the Privacy Policy</label>
+                      <input type="checkbox">
+                      <button class="btn btn-outline-primary fs-5 fw-semibold px-5 rounded-pill">continuue</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="wish">
+                <div class="forgotten-password">
+                  <h3 class="text-capitalize">wish list?</h3>
+                  <p class="fs-6 fw-semibold text-capitalize">Enter the e-mail address associated with your account.
+                    Click submit to have a password reset link e-mailed to you.</p>
+                  <h3 class="text-capitalize pb-3 border-1 border-bottom">Your E-Mail Address</h3>
+                  <form class="py-4">
+                    <div class="row align-items-center">
+                      <label class="d-inline col-2 text-capitalize fw-semibold">
+                        <p class="text-danger d-inline pe-2">*</p>E-Mail Address
+                      </label>
+                      <input type="email" required placeholder="E-Mail Address"
+                        class="col-10 border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                    </div>
+                    <div class="row justify-content-between align-items-center">
+                      <a href="#login" class="btn btn-outline-primary col-2 fs-5 my-4 fw-semibold rounded-pill">back</a>
+                      <a href="#" class="btn btn-outline-primary col-2 fs-5 fw-semibold rounded-pill">continuue</a>
+                    </div>
+                  </form>
+                  <div class="row">
+                    <ol class="col-12 col-md-4 list-unstyled ps-2">
+                      <li class="py-1"><a href="#"
+                          class="text-decoration-none text-uppercase hover fw-semibold text-muted">CUTE GANESHA POT WITH
+                          MONEY PLANT</a></li>
+                      <li class="py-1"><a href="#"
+                          class="text-decoration-none text-uppercase hover fw-semibold text-muted">BIRTHDAY GOLDEN MONEY
+                          PLANT</a></li>
+                      <li class="py-1"><a href="#"
+                          class="text-decoration-none text-uppercase hover fw-semibold text-muted">FORTUNER JADE
+                          PLANT</a></li>
+                      <li class="py-1"><a href="#"
+                          class="text-decoration-none text-uppercase hover fw-semibold text-muted">BLOOMING ROSE
+                          PLANT</a></li>
+                      <li class="py-1"><a href="#"
+                          class="text-decoration-none text-uppercase hover fw-semibold text-muted">BDAY JADE PLANT</a>
+                      </li>
+                    </ol>
+                    <ol class="col-12 col-md-4 list-unstyled ps-2">
+                      <li class="py-1"><a href="#"
+                          class="text-decoration-none text-uppercase hover fw-semibold text-muted">KALANCHOE BLOOMING
+                          PLANT</a></li>
+                      <li class="py-1"><a href="#"
+                          class="text-decoration-none text-uppercase hover fw-semibold text-muted">BABY GROOT
+                          SYNGONIUM</a></li>
+                      <li class="py-1"><a href="#"
+                          class="text-decoration-none text-uppercase hover fw-semibold text-muted">BLOOMING RED ROSE
+                          PLANT</a></li>
+                      <li class="py-1"><a href="#"
+                          class="text-decoration-none text-uppercase hover fw-semibold text-muted">LUCK WITH BONSAI</a>
+                      </li>
+                      <li class="py-1"><a href="#"
+                          class="text-decoration-none text-uppercase hover fw-semibold text-muted">CARMONA S SHAPED
+                          BONSAI PLANT</a></li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="History">
+                <div class="row">
+                  <div class="col-12 col-md-6 px-3">
+                    <div class="customer border border-1 rounded-3 p-3">
+                      <h3 class="text-capitalize">History</h3>
+                      <p class="fs-6 fw-semibold text-capitalize">History Account</p>
+                      <p class="fs-6 fw-semibold">By creating an account you will be able to shop faster, be up to date
+                        on an order's status, and keep track of the orders you have previously made.</p>
+                      <button class="btn btn-outline-primary fs-5 fw-semibold px-5 rounded-pill">continuue</button>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 px-3">
+                    <div class="customer border border-1 rounded-3 p-3">
+                      <h3 class="text-capitalize">Returning Customer</h3>
+                      <p class="fs-6 fw-semibold text-capitalize">I am a returning customer</p>
+                      <label class="d-block fw-semibold">E-Mail Address</label>
+                      <input type="email" required placeholder="E-Mail Address"
+                        class="border-0 border-bottom border-2 col-12  py-1 fw-semibold my-2">
+                      <label class="d-block fw-semibold">Password</label>
+                      <input type="email" required placeholder="Password"
+                        class="border-0 border-bottom border-2 col-12  py-1 fw-semibold my-2">
+                      <button class="btn btn-outline-primary fs-5 fw-semibold px-5 rounded-pill">continuue</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="downloads">
+                <div class="row">
+                  <div class="col-12 col-md-6 px-3">
+                    <div class="customer border border-1 rounded-3 p-3">
+                      <h3 class="text-capitalize">new customer</h3>
+                      <p class="fs-6 fw-semibold text-capitalize">downloads app</p>
+                      <p class="fs-6 fw-semibold">By creating an account you will be able to shop faster, be up to date
+                        on an order's status, and keep track of the orders you have previously made.</p>
+                      <button class="btn btn-outline-primary fs-5 fw-semibold px-5 rounded-pill">continuue</button>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 px-3">
+                    <div class="customer border border-1 rounded-3 p-3">
+                      <h3 class="text-capitalize">Returning Customer</h3>
+                      <p class="fs-6 fw-semibold text-capitalize">I am a returning customer</p>
+                      <label class="d-block fw-semibold">E-Mail Address</label>
+                      <input type="email" required placeholder="E-Mail Address"
+                        class="border-0 border-bottom border-2 col-12  py-1 fw-semibold my-2">
+                      <label class="d-block fw-semibold">Password</label>
+                      <input type="email" required placeholder="Password"
+                        class="border-0 border-bottom border-2 col-12  py-1 fw-semibold my-2">
+                      <button class="btn btn-outline-primary fs-5 fw-semibold px-5 rounded-pill">continuue</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="recurring">
+                <div class="col-12 px-3">
+                  <div class="customer p-3">
+                    <h3 class="text-capitalize">register account</h3>
+                    <p class="fs-6 fw-semibold text-capitalize">If you already have an account with us, please login at
+                      the login page.</p>
+                    <h3 class="text-capitalize pb-3 border-1 border-bottom">Your Personal Details</h3>
+                    <form class="py-4">
+                      <div class="row align-items-center">
+                        <label class="d-inline col-2 text-capitalize fw-semibold text-end">
+                          <p class="text-danger d-inline pe-2">*</p>first name
+                        </label>
+                        <input type="text" placeholder="first name"
+                          class="col-10 border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                        <label class="d-inline col-2 text-capitalize my-3 fw-semibold text-end">
+                          <p class="text-danger d-inline pe-2">*</p>Last name
+                        </label>
+                        <input type="text" placeholder="Last  name"
+                          class="col-10 my-3 border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                        <label class="d-inline col-2 text-capitalize fw-semibold text-end">
+                          <p class="text-danger d-inline pe-2">*</p>e-mail
+                        </label>
+                        <input type="email" required placeholder="e-mail"
+                          class="col-10 border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                        <label class="d-inline col-2 text-capitalize my-3 fw-semibold text-end">
+                          <p class="text-danger d-inline pe-2">*</p>Telephone
+                        </label>
+                        <input type="number" min="10" max="10" required placeholder="Telephone"
+                          class="col-10 my-3 border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                      </div>
+                    </form>
+                    <h3 class="text-capitalize pb-3 border-1 border-bottom">Your password</h3>
+                    <form class="py-4">
+                      <div class="row align-items-center">
+                        <label class="d-inline col-2 text-capitalize my-3 fw-semibold text-end">
+                          <p class="text-danger d-inline pe-2">*</p>password
+                        </label>
+                        <input type="password" required placeholder="password"
+                          class="col-10 my-3 border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                        <label class="d-inline col-2 text-capitalize fw-semibold text-end">
+                          <p class="text-danger d-inline pe-2">*</p>password Confirm
+                        </label>
+                        <input type="password" required placeholder="password Confirm"
+                          class="col-10 border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                      </div>
+                    </form>
+                    <h3 class="text-capitalize pb-3 border-1 border-bottom">Newsletter</h3>
+                    <form class="py-4">
+                      <div class="ro">
+                        <label class="d-inline text-capitalize my-3 pe-4 fw-semibold">Subscribe</label>
+                        <input type="radio" value="1" name="Subscribe"
+                          class="border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                        <label class="text-capitalize text-dark fw-semibold">yes</label>
+                        <input type="radio" value="0" name="Subscribe" checked
+                          class="border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                        <label class="text-capitalize text-dark fw-semibold">no</label>
+                      </div>
+                    </form>
+                    <div class="text-end">
+                      <label>I have read and agree to the Privacy Policy</label>
+                      <input type="checkbox">
+                      <button class="btn btn-outline-primary fs-5 fw-semibold px-5 rounded-pill">continuue</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="reward">
+                <h2 class="text-uppercase text-dark">reward point does not fond</h2>
+                <p class="text-capitalize fw-semibold text-danger">(buy any prodcutes and get roward point)</p>
+              </div>
+              <div class="tab-pane fade" id="returns">
+                <div class="col-12 px-3">
+                  <div class="customer p-3">
+                    <h3 class="text-capitalize">return forn</h3>
+                    <p class="fs-6 fw-semibold text-capitalize">If you already have an account with us, please login at
+                      the login page.</p>
+                    <h3 class="text-capitalize pb-3 border-1 border-bottom">Your Personal Details</h3>
+                    <form class="py-4">
+                      <div class="row align-items-center">
+                        <label class="d-inline col-2 text-capitalize fw-semibold text-end">
+                          <p class="text-danger d-inline pe-2">*</p>first name
+                        </label>
+                        <input type="text" placeholder="first name"
+                          class="col-10 border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                        <label class="d-inline col-2 text-capitalize my-3 fw-semibold text-end">
+                          <p class="text-danger d-inline pe-2">*</p>Last name
+                        </label>
+                        <input type="text" placeholder="Last  name"
+                          class="col-10 my-3 border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                        <label class="d-inline col-2 text-capitalize fw-semibold text-end">
+                          <p class="text-danger d-inline pe-2">*</p>e-mail
+                        </label>
+                        <input type="email" required placeholder="e-mail"
+                          class="col-10 border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                        <label class="d-inline col-2 text-capitalize my-3 fw-semibold text-end">
+                          <p class="text-danger d-inline pe-2">*</p>Telephone
+                        </label>
+                        <input type="number" min="10" max="10" required placeholder="Telephone"
+                          class="col-10 my-3 border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                      </div>
+                    </form>
+                    <h3 class="text-capitalize pb-3 border-1 border-bottom">Your password</h3>
+                    <form class="py-4">
+                      <div class="row align-items-center">
+                        <label class="d-inline col-2 text-capitalize my-3 fw-semibold text-end">
+                          <p class="text-danger d-inline pe-2">*</p>password
+                        </label>
+                        <input type="password" required placeholder="password"
+                          class="col-10 my-3 border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                        <label class="d-inline col-2 text-capitalize fw-semibold text-end">
+                          <p class="text-danger d-inline pe-2">*</p>password Confirm
+                        </label>
+                        <input type="password" required placeholder="password Confirm"
+                          class="col-10 border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                      </div>
+                    </form>
+                    <h3 class="text-capitalize pb-3 border-1 border-bottom">Newsletter</h3>
+                    <form class="py-4">
+                      <div class="ro">
+                        <label class="d-inline text-capitalize my-3 pe-4 fw-semibold">Subscribe</label>
+                        <input type="radio" value="1" name="Subscribe"
+                          class="border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                        <label class="text-capitalize text-dark fw-semibold">yes</label>
+                        <input type="radio" value="0" name="Subscribe" checked
+                          class="border text-capitalize fw-semibold border-1 border-muted text-muted p-2">
+                        <label class="text-capitalize text-dark fw-semibold">no</label>
+                      </div>
+                    </form>
+                    <div class="text-end">
+                      <label>I have read and agree to the Privacy Policy</label>
+                      <input type="checkbox">
+                      <button class="btn btn-outline-primary fs-5 fw-semibold px-5 rounded-pill">continuue</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="transactions">
+                <h2 class="text-uppercase text-danger">any transactions is not found</h2>
+              </div>
+              <div class="tab-pane fade" id="newsletter">
+                <div class="newsletter-content">
+                  <h2 class="display-4 fw-bold text-center">Subscribe Newsletter</h2>
+                  <p class="text-center">Subscribe to our newsletters now and stay up to date with new collections, the
+                    latest
+                    lookbooks and exclusive offers.</p>
+                  <form>
+                    <div class="col-12 col-lg-5 mx-auto">
+                      <div class="input-group mb-5">
+                        <input type="text" class="form-control border border-3 fw-semibold"
+                          placeholder="Recipient's username" aria-label="Recipient's username"
+                          aria-describedby="button-addon2">
+                        <button class="btn btn-outline-primary px-4 fw-semibold" type="button"
+                          id="button-addon2">Button</button>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="col-12 col-lg-3 mx-auto d-flex">
+                    <div class="rounded-circle hover-i mx-1 text-center"><i class="bi bi-dropbox fs-4"></i></div>
+                    <div class="rounded-circle hover-i mx-1 text-center"><i class="bi bi-life-preserver fs-4"></i></div>
+                    <div class="rounded-circle hover-i mx-1 text-center"><i class="bi bi-meta fs-4"></i></div>
+                    <div class="rounded-circle hover-i mx-1 text-center"><i class="bi bi-whatsapp fs-4"></i></div>
+                    <div class="rounded-circle hover-i mx-1 text-center"><i class="bi bi-youtube fs-4"></i></div>
+                    <div class="rounded-circle hover-i mx-1 text-center"><i class="bi bi-twitter fs-4"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade  show active" id="about">
+                <div class="col-12 px-3">
+                  <div class="customer p-3">
+                    <h3 class="text-uppercase">about us</h3>
+                    <div class="about-content p-4 bg-light">
+                      <div class="row align-items-center">
+                        <div class="col-12 col-md-6 order-2 order-md-1">
+                          <h3 class="text-uppercase">about us</h3>
+                        <h5 class="text-primary text-uppercase">who we are</h5>
+                        <p class="fw-semibold text-muted fs-5">We are a leading company sit amet, consectetur adipisicing elit. Minus obcaecati pariatur officiis molestias eveniet harum laudantium obcaecati pariatur officiis molestias eveniet harum laudantium sed optio iste.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibheuismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                        </div>
+                        <div class="col-12 col-md-6 order-1 order-md-2">
+                          <img src="img/about.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="Delivery">
+                <div class="forgotten-password">
+                  <h3 class="text-capitalize">delivery information</h3>
+                  <p class="fs-6 fw-semibold text-capitalize">Enter the e-mail address associated with your account.
+                    Click submit to have a password reset link e-mailed to you.</p>
+                  <h3 class="text-capitalize pb-3">Your Address</h3>
+                  <input type="text" placeholder="enter your address" class="col-12 fs-5 border-0 text-capitalize border-bottom border1">
+                </div>
+              </div>
+              <div class="tab-pane fade" id="Privacy">
+                <div class="row">
+                  <div class="col-12 px-3">
+                    <div class="customer border border-1 rounded-3 p-3">
+                      <h3 class="text-capitalize">PRIVACY POLICY</h3>
+                      <p class="fs-6 fw-semibold">By creating an account you will be able to shop faster, be up to date
+                        on an order's status, and keep track of the orders you have previously made.</p>
+                      <button class="btn btn-outline-primary fs-5 fw-semibold px-5 rounded-pill">continuue</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="Terms">
+                <div class="col-12 px-3">
+                  <div class="customer p-3">
+                    <h3 class="text-capitalize">terms & Conditions </h3>
+                    <p class="fs-6 fw-semibold text-capitalize">If you already have an account with us, please login atthe login page.</p>
+                    <p class="fs-6 fw-semibold text-capitalize">=> The seller (ugaoo.com) will not be responsible for any damage, direct loss suffered by the buyer due to any negligence, breach of contract or excessive pricing of the goods.</p>       
+                    <p class="fs-6 fw-semibold text-capitalize">=> The seller is not responsible for any economic loss, loss of profit or any indirect third party loss suffered by the buyer caused due to any reason such as negligence, failure to meet any estimated delivery date, misrepresentation or breach of contract. </p>  
+                    <p class="fs-6 fw-semibold text-capitalize">=> All offers for goods purchased by buyers shall be treated as offers listed under the clauses given in Terms & Conditions (T&C). The seller may choose not to accept or cancel a particular order without giving any particular reason. </p>  
+                    <p class="fs-6 fw-semibold text-capitalize">=> Placing an order on ugaoo.com will be treated as an evidence for acceptance of T&C on ugaoo.com
+                    <p class="fs-6 fw-semibold text-capitalize">=> Any changes mentioned in T&C will be considered inapplicable unless the seller agrees the same in writing
+                    </p>  
+
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="Contact">
+                <div class="row">
+                  <div class="col-12 col-lg-6">
+                    <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2042.5960941557255!2d72.78370375099327!3d21.224431320007035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04c146eac719b%3A0x683fc9638004c9f0!2sThe%20Great%20Fun%20Amusement%20Park!5e0!3m2!1sen!2sin!4v1684531832834!5m2!1sen!2sin"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="col-12"></iframe>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                      <div class="row">
+                          <div class="col-12 col-md-6 ">
+                              <label for="" class="text-muted d-block opacity-75 fw-normal">Your Name (required)</label>
+                              <input type="text" class="w-100 py-2" required>
+                          </div>
+                          <div class="col-12 col-md-6 ">
+                              <label for="" class="text-muted d-block opacity-75 fw-normal">Your Email (required)</label>
+                              <input type="text" class="w-100 py-2 mb-4" required>
+                          </div>
+                      </div>
+                      <label for="" class="text-muted d-block opacity-75 fw-normal">Your Phone Number</label>
+                      <input type="tel" class="w-100 py-2 mb-4" required>
+  
+                      <label for="" class="text-muted opacity-75 fw-normal">Your Message</label>
+                      <textarea name="" id="" rows="8" required class="col-12 mb-4"></textarea>
+  
+                      <div class="contant-button">
+                          <a href="#"
+                              class="btn btn-primary px-4 py-2 rounded-pill text-decoration-none text-white">Submit
+                              Message</a>
+                      </div>
+                  </div>
+              </div>
+              </div>
+              <div class="tab-pane fade" id="Site">
+                <div class="row">
+                  <div class="col-12 col-md-6 px-3">
+                    <div class="customer border border-1 rounded-3 p-3">
+                      <h3 class="text-capitalize">History</h3>
+                      <p class="fs-6 fw-semibold text-capitalize">History Account</p>
+                      <p class="fs-6 fw-semibold">By creating an account you will be able to shop faster, be up to date
+                        on an order's status, and keep track of the orders you have previously made.</p>
+                      <button class="btn btn-outline-primary fs-5 fw-semibold px-5 rounded-pill">continuue</button>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 px-3">
+                    <div class="customer border border-1 rounded-3 p-3">
+                      <h3 class="text-capitalize">Returning Customer</h3>
+                      <p class="fs-6 fw-semibold text-capitalize">I am a returning customer</p>
+                      <label class="d-block fw-semibold">E-Mail Address</label>
+                      <input type="email" required placeholder="E-Mail Address"
+                        class="border-0 border-bottom border-2 col-12  py-1 fw-semibold my-2">
+                      <label class="d-block fw-semibold">Password</label>
+                      <input type="email" required placeholder="Password"
+                        class="border-0 border-bottom border-2 col-12  py-1 fw-semibold my-2">
+                      <button class="btn btn-outline-primary fs-5 fw-semibold px-5 rounded-pill">continuue</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Newsletter section  -->
+  <section class="padding-80 bg-light">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2 class="display-4 fw-bold text-center">Subscribe Newsletter</h2>
+        <p class="text-center">Subscribe to our newsletters now and stay up to date with new collections, the latest
+          lookbooks and exclusive offers.</p>
+        <form>
+          <div class="col-12 col-lg-5 mx-auto">
+            <div class="input-group mb-5">
+              <input type="text" class="form-control border border-3 fw-semibold" placeholder="Recipient's username"
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn btn-outline-primary px-4 fw-semibold" type="button" id="button-addon2">Button</button>
+            </div>
+          </div>
+        </form>
+        <div class="col-12 col-lg-3 mx-auto d-flex">
+          <div class="rounded-circle hover-i mx-1 text-center"><i class="bi bi-dropbox fs-4"></i></div>
+          <div class="rounded-circle hover-i mx-1 text-center"><i class="bi bi-life-preserver fs-4"></i></div>
+          <div class="rounded-circle hover-i mx-1 text-center"><i class="bi bi-meta fs-4"></i></div>
+          <div class="rounded-circle hover-i mx-1 text-center"><i class="bi bi-whatsapp fs-4"></i></div>
+          <div class="rounded-circle hover-i mx-1 text-center"><i class="bi bi-youtube fs-4"></i></div>
+          <div class="rounded-circle hover-i mx-1 text-center"><i class="bi bi-twitter fs-4"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer  -->
+  <footer class="bg-light p-5">
+    <div class="container">
+      <div class="border border-1 border-dark border-opacity-10 mb-5"></div>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="company-details">
+            <a class="fw-bold fs-4 my-3 text-dark text-decoration-none" href="#">CONTACT INFO</a>
+            <a href="#" class="text-decoration-none hover d-block text-dark py-2 footer-hover footer-hover"><i
+                class="bi bi-geo-alt pe-2 fs-4"></i>Brooklyn, New York, United States</a>
+            <a href="#" class="text-decoration-none hover d-block text-dark py-2 footer-hover"><i
+                class="bi bi-telephone pe-2 fs-4"></i>+0123-456789</a>
+            <a href="#" class="text-decoration-none hover d-block text-dark d-block py-2 footer-hover"><i
+                class="bi bi-envelope pe-2 fs-4"></i>example@example.com</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h4 class="fw-bold">INFORMATION</h4>
+          <ol class="list-unstyled ps-2">
+            <li class="py-1"><a href="about.html" class="text-decoration-none text-uppercase hover fw-semibold text-muted">about
+                us</a></li>
+            <li class="py-1"><a href="about.html"
+                class="text-decoration-none text-uppercase hover fw-semibold text-muted">Delivery Information</a></li>
+            <li class="py-1"><a href="about.html"
+                class="text-decoration-none text-uppercase hover fw-semibold text-muted">Privacy Policy</a></li>
+            <li class="py-1"><a href="about.html" class="text-decoration-none text-uppercase hover fw-semibold text-muted">Terms
+                & Conditions</a></li>
+            <li class="py-1"><a href="about.html"
+                class="text-decoration-none text-uppercase hover fw-semibold text-muted">Contact Us</a></li>
+          </ol>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h4 class="fw-bold">My Account</h4>
+          <ol class="list-unstyled ps-3">
+            <li class="py-1"><a href="about.html" class="text-decoration-none hover fw-semibold text-muted">My account</a></li>
+            <li class="py-1"><a href="about.html" class="text-decoration-none hover fw-semibold text-muted">Order History</a>
+            </li>
+            <li class="py-1"><a href="about.html" class="text-decoration-none hover fw-semibold text-muted">Wish List</a></li>
+            <li class="py-1"><a href="about.html" class="text-decoration-none hover fw-semibold text-muted">Newsletter</a></li>
+            <li class="py-1"><a href="about.html" class="text-decoration-none hover fw-semibold text-muted">Returns</a></li>
+          </ol>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h4 class="fw-bold">Extras</h4>
+          <ol class="list-unstyled ps-3">
+            <li class="py-1"><a href="about.html" class="text-decoration-none hover fw-semibold text-muted">Brands</a></li>
+            <li class="py-1"><a href="about.html" class="text-decoration-none hover fw-semibold text-muted">Gift Certificates</a>
+            </li>
+            <li class="py-1"><a href="about.html" class="text-decoration-none hover fw-semibold text-muted">Affiliate</a></li>
+            <li class="py-1"><a href="about.html" class="text-decoration-none hover fw-semibold text-muted">Specials</a></li>
+            <li class="py-1"><a href="about.html" class="text-decoration-none hover fw-semibold text-muted">Site Map</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- offcanvas  -->
+  <div class="offcanvas offcanvas-start" data-bs-backdrop="static" id="launch-offcanvas">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Cart</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="alert alert-light" role="alert">
+        <div class="cart-card shadow my-4">
+          <div class="row align-items-center">
+            <div class="col-3 position-relative ">
+              <div class="prodcutes-img">
+                <img src="img/p-1.jpg" alt="">
+              </div>
+              <span class="position-absolute top-0 end-50 translate-middle badge rounded-pill bg-danger"><i
+                  class="bi bi-x-lg"></i></span>
+            </div>
+            <div class="col-9">
+              <div class="prodcutes-content">
+                <h6>BABY GROOT SYNGONIUM</h6>
+                <p class="text-muted">1 x Rs 590.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-card shadow my-4">
+          <div class="row align-items-center">
+            <div class="col-3 position-relative">
+              <div class="prodcutes-img">
+                <img src="img/p-2.jpg" alt="" class="poition-relative">
+              </div>
+              <span class="position-absolute top-0 end-50 translate-middle badge rounded-pill bg-danger"><i
+                  class="bi bi-x-lg"></i></span>
+            </div>
+            <div class="col-6">
+              <div class="prodcutes-content">
+                <h6>BIRTHDAY GOLDEN MONEY PLANT</h6>
+                <p class="text-muted">1 x Rs 975.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-card shadow my-4">
+          <div class="row align-items-center">
+            <div class="col-3 position-relative">
+              <div class="prodcutes-img">
+                <img src="img/p-7.jpg" alt="" class="poition-relative">
+              </div>
+              <span class="position-absolute top-0 end-50 translate-middle badge rounded-pill bg-danger"><i
+                  class="bi bi-x-lg"></i></span>
+            </div>
+            <div class="col-6">
+              <div class="prodcutes-content">
+                <h6>BLOOMING ROSE PLANT</h6>
+                <p class="text-muted">1 x Rs 555.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="cart-bills">
+            <div class="d-flex justify-content-between border-top border-bottom border-2 border-opacity-10 py-3">
+              <h6 class="text-uppercase">total:</h6>
+              <h6 class="text-primary">$2120.00</h6>
+            </div>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col-6">
+            <a class="btn btn-outline-primary text-uppercase rounded-0 col-12 fw-semibold" href="home_decore.html">view
+              cart</a>
+          </div>
+          <div class="col-6">
+            <a class="btn btn-outline-primary text-uppercase rounded-0 col-12 fw-semibold" href="checkout.html">checkout</a>
+          </div>
+        </div>
+        <p class="text-muted">Free Shipping on All Orders Over Rs 1000 !</p>
+      </div>
+    </div>
+  </div>
+  <a href="#" class="refres btn btn-outline-primary"><i class="bi-caret-up-fill fs-4"></i></i></a>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.7.0.js"></script>
+  <script src="js/swiper-element-bundle.min.js"></script>
+  <script>
+
+    (() => {
+      'use strict'
+      document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        .forEach(tooltip => {
+          new bootstrap.Tooltip(tooltip)
+        })
+      document.querySelectorAll('[data-bs-toggle="popover"]')
+        .forEach(popover => {
+          new bootstrap.Popover(popover)
+        })
+
+      const toastPlacement = document.getElementById('toastPlacement')
+      if (toastPlacement) {
+        document.getElementById('selectToastPlacement').addEventListener('change', function () {
+          if (!toastPlacement.dataset.originalClass) {
+            toastPlacement.dataset.originalClass = toastPlacement.className
+          }
+
+          toastPlacement.className = `${toastPlacement.dataset.originalClass} ${this.value}`
+        })
+      }
+      document.querySelectorAll('.bd-example .toast')
+        .forEach(toastNode => {
+          const toast = new bootstrap.Toast(toastNode, {
+            autohide: false
+          })
+
+          toast.show()
+        })
+      const toastTrigger = document.getElementById('liveToastBtn')
+      const toastLiveExample = document.getElementById('liveToast')
+      if (toastTrigger) {
+        toastTrigger.addEventListener('click', () => {
+          const toast = new bootstrap.Toast(toastLiveExample)
+
+          toast.show()
+        })
+      }
+      const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+      const alertTrigger = document.getElementById('liveAlertBtn')
+
+      const appendAlert = (message, type) => {
+        const wrapper = document.createElement('div')
+        wrapper.innerHTML = [
+          `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+          `   <div>${message}</div>`,
+          '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+          '</div>'
+        ].join('')
+
+        alertPlaceholder.append(wrapper)
+      }
+
+      if (alertTrigger) {
+        alertTrigger.addEventListener('click', () => {
+          appendAlert('could not find this function', 'success')
+        })
+      }
+      document.querySelectorAll('.bd-example-indeterminate [type="checkbox"]')
+        .forEach(checkbox => {
+          if (checkbox.id.includes('Indeterminate')) {
+            checkbox.indeterminate = true
+          }
+        })
+      document.querySelectorAll('.bd-content [href="#"]')
+        .forEach(link => {
+          link.addEventListener('click', event => {
+            event.preventDefault()
+          })
+        })
+      const exampleModal = document.getElementById('exampleModal')
+      if (exampleModal) {
+        exampleModal.addEventListener('show.bs.modal', event => {
+          // Button that triggered the modal
+          const button = event.relatedTarget
+          // Extract info from data-bs-* attributes
+          const recipient = button.getAttribute('data-bs-whatever')
+
+          // Update the modal's content.
+          const modalTitle = exampleModal.querySelector('.modal-title')
+          const modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+          modalTitle.textContent = `New message to ${recipient}`
+          modalBodyInput.value = recipient
+        })
+      }
+      const myOffcanvas = document.querySelectorAll('.bd-example-offcanvas .offcanvas')
+      if (myOffcanvas) {
+        myOffcanvas.forEach(offcanvas => {
+          offcanvas.addEventListener('show.bs.offcanvas', event => {
+            event.preventDefault()
+          }, false)
+        })
+      }
+    })()
+
+  </script>
+  <script>
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 500) {
+        $("header").addClass("fixed")
+        $(".refres").removeClass("back-to-top-fixed")
+      }
+      else {
+        $("header").removeClass("fixed")
+        $(".refres").addClass("back-to-top-fixed")
+      }
+    })
+  </script>
+</body>
+
+</html>

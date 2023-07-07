@@ -1,0 +1,240 @@
+* {
+  outline: none;
+}
+
+body {
+  font-family: "Rajdhani";
+}
+
+:root {
+  --bs-primary: #268724;
+  --bs-primary-rgb: 38, 135, 36;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #268724;
+  --bs-btn-border-color: #268724;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #268724;
+  --bs-btn-hover-border-color: #268724;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #268724;
+  --bs-btn-active-border-color: #268724;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #268724;
+  --bs-btn-disabled-border-color: #268724 ;
+}
+
+.btn-success {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #fff;
+  --bs-btn-border-color: #fff;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #268724;
+  --bs-btn-hover-border-color: #268724;
+  --bs-btn-focus-shadow-rgb: 60, 153, 110;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #268724;
+  --bs-btn-active-border-color: #268724;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #268724;
+  --bs-btn-disabled-border-color: #268724 ;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #268724;
+  --bs-btn-border-color: #268724;
+  --bs-btn-hover-color: #268724;
+  --bs-btn-hover-bg: #2687241d;
+  --bs-btn-hover-border-color: #268724;
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #268724;
+  --bs-btn-active-border-color: #268724;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #268724;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #268724;
+  --bs-gradient: none ;
+}
+
+img {
+  width: 100%;
+}
+
+.padding-80 {
+  padding: 80px 0;
+}
+
+.hover {
+  transition: all 0.5s;
+}
+.hover:hover {
+  color: var(--bs-primary) !important;
+}
+
+.hover-i {
+  width: 40px;
+  height: 40px;
+  line-height: 45px;
+  transition: all 0.5s;
+  background-color: #e2dede;
+}
+.hover-i:hover {
+  background-color: var(--bs-primary);
+  color: #fff;
+}
+
+.img-zoom {
+  transition: all 0.5s;
+}
+.img-zoom:hover {
+  transform: scale(1.1);
+}
+
+.model-bg {
+  background-image: url(../img/model-img.jpg);
+  background-size: cover;
+}
+
+.hedaer-bg {
+  background-color: #071c1f;
+}
+
+.btn-56 {
+  width: 56px;
+  height: 56px;
+}
+
+.serach-box {
+  top: 10%;
+  right: 18%;
+  z-index: 9999 !important;
+}
+
+.alret-position {
+  top: 75%;
+  left: 0;
+  z-index: 999999999 !important;
+}
+
+.banner-bg {
+  background-image: url(../img/main-banner-bg.jpg);
+  background-size: cover;
+}
+
+.best-bg {
+  background-image: url(../img/best-bg.jpeg);
+  background-size: cover;
+  position: relative;
+}
+.best-bg .best-bg-overly {
+  position: absolute;
+  background-color: #f7f7f7;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.5s;
+}
+.best-bg:hover .best-bg-overly {
+  background-color: rgba(247, 247, 247, 0.3803921569);
+}
+
+.bestplant-box .plant-img {
+  position: relative;
+}
+.bestplant-box .plant-img .plant-content {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  right: 0;
+}
+
+.work-img {
+  overflow: hidden;
+  position: relative;
+}
+.work-img:hover .work-overly {
+  opacity: 1;
+  visibility: visible;
+}
+.work-img .work-overly {
+  transition: all 0.5s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4666666667);
+  top: 0;
+  left: 0;
+  right: 0;
+  line-height: 260px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.offer .offer-img {
+  position: relative;
+}
+.offer .offer-img .offer-content {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+}
+.offer .offer-img .offer-overly {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(247, 247, 247, 0.2784313725);
+  transform: translateX(-100%);
+  transition: all 0.9s;
+}
+.offer .offer-img:hover .offer-overly {
+  transform: translateX(0%);
+}
+
+@media (min-width: 991px) {
+  .testimonial {
+    transform: translateY(-20%);
+  }
+  .blog-content {
+    transform: translateY(-30%);
+  }
+  .blog-content-1 {
+    transform: translateY(30%);
+  }
+}
+.refres {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  text-align: center;
+  padding-top: 8px;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.fixed {
+  background-color: #071c1f !important;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.back-to-top-fixed {
+  position: fixed;
+  opacity: 0;
+}/*# sourceMappingURL=style.css.map */

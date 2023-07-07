@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Rajdhani';
+    src: url('../font/Rajdhani-Medium.woff2') format('woff2'),
+        url('../font/Rajdhani-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rajdhani';
+    src: url('../font/Rajdhani-Bold.woff2') format('woff2'),
+        url('../font/Rajdhani-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rajdhani';
+    src: url('../font/Rajdhani-Light.woff2') format('woff2'),
+        url('../font/Rajdhani-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rajdhani';
+    src: url('../font/Rajdhani-Regular.woff2') format('woff2'),
+        url('../font/Rajdhani-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rajdhani';
+    src: url('../font/Rajdhani-SemiBold.woff2') format('woff2'),
+        url('../font/Rajdhani-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
