@@ -123,11 +123,6 @@ img {
   z-index: 999999999 !important;
 }
 
-.banner-bg {
-  background-image: url(../img/main-banner-bg.jpg);
-  background-size: cover;
-}
-
 .best-bg {
   background-image: url(../img/best-bg.jpeg);
   background-size: cover;
@@ -237,4 +232,9 @@ img {
 .back-to-top-fixed {
   position: fixed;
   opacity: 0;
+}
+
+.bg-sign {
+  background-color: rgba(21, 63, 21, 0.3254901961);
+  height: 100vh;
 }/*# sourceMappingURL=style.css.map */

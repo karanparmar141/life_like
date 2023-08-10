@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Like : login and sign up</title>
+    <style>
+        @import url(css/bootstrap-icons.min.css);
+        @import url(css/bootstrap.min.css);
+        @import url(css/swiper-bundle.min.css);
+        @import url(css/fonts.css.css);
+        @import url(css/style.css);
+    </style>
+</head>
+<body>
+    <section class="bg-sign  padding-80">
+        <h2></h2>
+        <div class="container bg-white rounded-5">
+            <div class="sign_up row align-items-center">
+                <div class="col-12 col-md-6 p-3">
+                    <img src="img/login-page.jpg" alt="img">
+                </div>
+                <div class="col-12 col-md-6">
+                    <nav>
+                        <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                          <button class="nav-link col-12 col-md-6 fw-bold fs-4 active text-uppercase" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#sign_up" type="button" role="tab" aria-controls="nav-home" aria-selected="true">sign up</button>
+                          <button class="nav-link col-12 col-md-6 fw-bold fs-4 text-uppercase" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">login</button>
+                        </div>
+                      </nav>
+                      <div class="tab-content" id="nav-tabContent">
+                          <div class="tab-pane fade active show" id="sign_up" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                            <form id="sign">
+                                <div class="col-12 col-md-8 mx-auto my-5">
+                                    <input type="text" class="w-100 py-2 border-top-0 border-start-0 border-end-0 border-primary fw-semibold fs-5" required placeholder="enter your username *">
+                                </div>
+                                <div class="col-12 col-md-8 mx-auto my-5">
+                                    <input type="password" class="w-100 py-2 border-top-0 border-start-0 border-end-0 border-primary fw-semibold fs-5" required placeholder="enter your password *">
+                                </div>
+                            </form>
+                          </div>
+                          <div class="tab-pane fade" id="login" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">login</div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.7.0.js"></script>
+<script src="js/swiper-element-bundle.min.js"></script>
+
+</html>
