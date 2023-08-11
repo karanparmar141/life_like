@@ -32,20 +32,46 @@
                           <div class="tab-pane fade active show" id="sign_up" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
                             <form id="sign">
                                 <div class="col-12 col-md-8 mx-auto my-5">
-                                    <input type="text" class="w-100 py-2 border-top-0 border-start-0 border-end-0 border-primary fw-semibold fs-5" required placeholder="enter your username *">
+                                    <input type="email" id="email-s" class="w-100 py-2 border-top-0 border-start-0 border-end-0 border-primary fw-semibold fs-5" placeholder="enter your email *">
                                 </div>
                                 <div class="col-12 col-md-8 mx-auto my-5">
-                                    <input type="password" class="w-100 py-2 border-top-0 border-start-0 border-end-0 border-primary fw-semibold fs-5" required placeholder="enter your password *">
+                                    <input type="password" id="password-s" class="w-100 py-2 border-top-0 border-start-0 border-end-0 border-primary fw-semibold fs-5" placeholder="enter your password *">
+                                </div>
+                                <div class="col-12 col-md-8 mx-auto my-5">
+                                    <input type="checkbox" class="p-2"><label class="fw-semibold">Agree to Terms and Conditions</label>
+                                </div>
+                                <div class="col-12 col-md-8 mx-auto my-5">
+                                    <input type="submit" value="sign up" id="sign-btn" class="btn btn-outline-secondary col-12 fw-semibold text-uppercase rounded-pill fs-5">
                                 </div>
                             </form>
                           </div>
-                          <div class="tab-pane fade" id="login" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">login</div>
+                          <div class="tab-pane fade" id="login" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                            <form id="login-page">
+                                <div class="col-12 col-md-8 mx-auto my-5">
+                                    <input type="text" id="name" class="w-100  border-top-0 border-start-0 border-end-0 border-primary fw-semibold fs-5" required placeholder="enter your name *">
+                                </div>
+                                <div class="col-12 col-md-8 mx-auto my-5">
+                                    <input type="email" id="email" class="w-100  border-top-0 border-start-0 border-end-0 border-primary fw-semibold fs-5" required placeholder="enter your email *">
+                                </div>
+                                <div class="col-12 col-md-8 mx-auto my-5">
+                                    <input type="password" id="password" class="w-100  border-top-0 border-start-0 border-end-0 border-primary fw-semibold fs-5" required placeholder="enter the password *">
+                                    <p id="l-p" class="text-danger"></p>
+                                </div>
+                                <div class="col-12 col-md-8 mx-auto my-5">
+                                    <input type="checkbox" class="p-2" required><label class="fw-semibold">Agree to Terms and Conditions</label>
+                                </div>
+                                <div class="col-12 col-md-8 mx-auto my-5">
+                                    <input type="submit" value="login" id="login-btn" class="btn btn-outline-secondary col-12 fw-semibold text-uppercase rounded-pill fs-5">
+                                </div>
+                            </form>
+                          </div>
                       </div>
                 </div>
             </div>
         </div>
     </section>
 </body>
+<script src="js/sign_up.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery-3.7.0.js"></script>
