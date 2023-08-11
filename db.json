@@ -18,5 +18,29 @@
       "password": "nhbhb",
       "id": 3
     }
+  ],
+  "prodcut": [
+    {
+      "title": "parmar karan mukeshbhai",
+      "selling-price": "mr.parmarkaran411@gmail.com",
+      "orginal-price": "mr.parmarkaran411@gmail.com",
+      "img-1":"img/p-12.jpg",
+      "img-2":"img/p-12(1).jpg",
+      "img-3":"img/p-12(2).jpg",
+      "catagary":"flowering",
+      "id": 1
+    },
+    {
+      "name": "KARAN MUKESH PARMAR",
+      "email": "mr.parmarkaran141@gmail.com",
+      "password": "karam",
+      "id": 2
+    },
+    {
+      "name": "parmar karan mukeshbhai",
+      "email": "mr.parmarkaran411@gmail.com",
+      "password": "nhbhb",
+      "id": 3
+    }
   ]
 }
