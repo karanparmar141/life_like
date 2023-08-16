@@ -101,31 +101,31 @@ let get = async () => {
   
 get();
 
-const productdata = (e) => {
-    e.preventDefault();
-    let value = document.getElementById("btn").value;
-    console.log(value)
-    let product = {
-      title: document.getElementById("title").value,
-      img: document.getElementById("img").value,
-      price: document.getElementById("price").value,
-      category: document.getElementById("category").value,
-    };
-    if (value == "submit") {
-      fetch('http://localhost:3000/products', {
-        method: 'POST',
-        headers: { 'content-type': 'application/json' },
-        body: JSON.stringify(product)
-      })
-    }
-    else {
-      fetch(`http://localhost:3000/products/${id}`, {
-        method: 'PATCH',
-        headers: { 'content-type': 'application/json' },
-        body: JSON.stringify(product)
-      })
-    }
+// const productdata = (e) => {
+//     e.preventDefault();
+//     let value = document.getElementById("btn").value;
+//     console.log(value)
+//     let product = {
+//       title: document.getElementById("title").value,
+//       img: document.getElementById("img").value,
+//       price: document.getElementById("price").value,
+//       category: document.getElementById("category").value,
+//     };
+//     if (value == "submit") {
+//       fetch('http://localhost:3000/products', {
+//         method: 'POST',
+//         headers: { 'content-type': 'application/json' },
+//         body: JSON.stringify(product)
+//       })
+//     }
+//     else {
+//       fetch(`http://localhost:3000/products/${id}`, {
+//         method: 'PATCH',
+//         headers: { 'content-type': 'application/json' },
+//         body: JSON.stringify(product)
+//       })
+//     }
   
-  }
+//   }
   
-  document.getElementById("form").addEventListener("submit", productdata);
+//   document.getElementById("form").addEventListener("submit", productdata);

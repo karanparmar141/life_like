@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Life Like : login and sign up</title>
+    <title>Life Like : sign and sign up</title>
     <style>
         @import url(css/bootstrap-icons.min.css);
         @import url(css/bootstrap.min.css);
@@ -22,50 +22,27 @@
                     <img src="img/login-page.jpg" alt="img">
                 </div>
                 <div class="col-12 col-md-6">
-                    <nav>
-                        <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                          <button class="nav-link col-12 col-md-6 fw-bold fs-4 active text-uppercase" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#sign_up" type="button" role="tab" aria-controls="nav-home" aria-selected="true">sign up</button>
-                          <button class="nav-link col-12 col-md-6 fw-bold fs-4 text-uppercase" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">login</button>
+                    <p class="text-primary fw-bold fs-3 text-uppercase border-bottom text-center border-2 border-primary">sign up</p>
+                    <form id="sign-page">
+                        <div class="col-12 col-md-8 mx-auto my-5">
+                            <input type="text" id="name" class="w-100  border-top-0 border-start-0 border-end-0 border-primary fw-semibold fs-5" placeholder="user name *">
+                            <div id="n_err"></div>
                         </div>
-                      </nav>
-                      <div class="tab-content" id="nav-tabContent">
-                          <div class="tab-pane fade active show" id="sign_up" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-                            <form id="sign">
-                                <div class="col-12 col-md-8 mx-auto my-5">
-                                    <input type="email" id="email-s" class="w-100 py-2 border-top-0 border-start-0 border-end-0 border-primary fw-semibold fs-5" placeholder="enter your email *">
-                                </div>
-                                <div class="col-12 col-md-8 mx-auto my-5">
-                                    <input type="password" id="password-s" class="w-100 py-2 border-top-0 border-start-0 border-end-0 border-primary fw-semibold fs-5" placeholder="enter your password *">
-                                </div>
-                                <div class="col-12 col-md-8 mx-auto my-5">
-                                    <input type="checkbox" class="p-2"><label class="fw-semibold">Agree to Terms and Conditions</label>
-                                </div>
-                                <div class="col-12 col-md-8 mx-auto my-5">
-                                    <input type="submit" value="sign up" id="sign-btn" class="btn btn-outline-secondary col-12 fw-semibold text-uppercase rounded-pill fs-5">
-                                </div>
-                            </form>
-                          </div>
-                          <div class="tab-pane fade" id="login" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-                            <form id="login-page">
-                                <div class="col-12 col-md-8 mx-auto my-5">
-                                    <input type="text" id="name" class="w-100  border-top-0 border-start-0 border-end-0 border-primary fw-semibold fs-5" required placeholder="enter your name *">
-                                </div>
-                                <div class="col-12 col-md-8 mx-auto my-5">
-                                    <input type="email" id="email" class="w-100  border-top-0 border-start-0 border-end-0 border-primary fw-semibold fs-5" required placeholder="enter your email *">
-                                </div>
-                                <div class="col-12 col-md-8 mx-auto my-5">
-                                    <input type="password" id="password" class="w-100  border-top-0 border-start-0 border-end-0 border-primary fw-semibold fs-5" required placeholder="enter the password *">
-                                    <p id="l-p" class="text-danger"></p>
-                                </div>
-                                <div class="col-12 col-md-8 mx-auto my-5">
-                                    <input type="checkbox" class="p-2" required><label class="fw-semibold">Agree to Terms and Conditions</label>
-                                </div>
-                                <div class="col-12 col-md-8 mx-auto my-5">
-                                    <input type="submit" value="login" id="login-btn" class="btn btn-outline-secondary col-12 fw-semibold text-uppercase rounded-pill fs-5">
-                                </div>
-                            </form>
-                          </div>
-                      </div>
+                        <div class="col-12 col-md-8 mx-auto my-5">
+                            <input type="email" id="email" class="w-100 border-top-0 border-start-0 border-end-0 border-primary fw-semibold fs-5"  placeholder="user_email123@gmail.com *">
+                            <div id="e_err"></div>
+                        </div>
+                        <div class="col-12 col-md-8 mx-auto my-5">
+                            <input type="password" id="password" class="w-100 border-top-0 border-start-0 border-end-0 border-primary fw-semibold fs-5 " placeholder="User_password@#123 *">
+                            <div id="p_err"></div>
+                        </div>
+                        <div class="col-12 col-md-8 mx-auto my-5">
+                            <input type="checkbox" class="p-2"><label class="fw-semibold">Agree to Terms and Conditions</label>
+                        </div>
+                        <div class="col-12 col-md-8 mx-auto my-5">
+                            <input type="submit" value="sign up" id="sign-btn" class="btn btn-outline-secondary col-12 fw-semibold text-uppercase rounded-pill fs-5">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
