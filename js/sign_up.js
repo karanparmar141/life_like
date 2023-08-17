@@ -7,12 +7,24 @@ const sign = (e) => {
     email: document.getElementById("email").value,
     password: document.getElementById("password").value
   };
-  let n_pattern = /^[a-zA-Z ]+$/;
-  // fetch('http://localhost:3000/user', 
-  //   method: 'POST',
-  //   headers: { 'content-type': 'application/json' },
-  //   body: JSON.stringify(user)
-  // })
+  fetch(`http://localhost:3000/user?email=${user.email}`)
+  .then((res) => res.json())
+  .then((data)=> {
+    if(data.length > 0){
+      alert("user already exists")
+      setTimeout(
+        window.location.href="./index.html"
+      ,2000);
+    }
+    else{
+      fetch("http://localhost:3000/user",{
+        method: "POST",
+        headers: {'content-type': 'application/json'},
+        body: JSON.stringify(user)
+      })
+    }
+  })
+  
 }
 document.getElementById("sign-page").addEventListener("submit", sign)
 document.getElementById("email").addEventListener("keypress",()=>{
