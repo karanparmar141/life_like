@@ -9,7 +9,7 @@ const navbar=()=>{
       <nav class="collapse navbar-collapse" id="dropdown">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item fw-semibold px-3 h6"><a href="index.html"
-              class="nav-link hover text-primary text-uppercase">home+</a>
+              class="nav-link hover text-white text-uppercase">home+</a>
           </li>
           <li class="nav-item fw-semibold px-3 h6"><a href="home_decore.html"
               class="nav-link hover text-white text-uppercase">home decore+</a>

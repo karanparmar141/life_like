@@ -13,10 +13,13 @@ const sign = (e) => {
     if(data.length > 0){
       alert("user already exists")
       setTimeout(
-        window.location.href="./index.html"
+        window.location.href="/index.html"
       ,2000);
     }
     else{
+      setTimeout(
+      window.location.href="/index.html"  
+      , 1000);
       fetch("http://localhost:3000/user",{
         method: "POST",
         headers: {'content-type': 'application/json'},

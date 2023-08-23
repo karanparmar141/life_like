@@ -18,7 +18,7 @@ const login = (e) => {
         }
       }
       else{
-        alert("user can not acces")
+        alert("user can not found")
       }
     })
     
