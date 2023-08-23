@@ -17,6 +17,7 @@ const sign = (e) => {
       ,2000);
     }
     else{
+      localStorage.setItem("login",true)
       setTimeout(
       window.location.href="/index.html"  
       , 1000);
@@ -30,6 +31,7 @@ const sign = (e) => {
   
 }
 document.getElementById("sign-page").addEventListener("submit", sign)
+
 document.getElementById("email").addEventListener("keypress",()=>{
   let email=document.getElementById("email").value
   let e_pattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
@@ -50,6 +52,7 @@ document.getElementById("email").addEventListener("keypress",()=>{
     document.getElementById("email").classList.add("text-primary")
   }
 })
+
 document.getElementById("password").addEventListener("keypress",(e)=>{
   let password=document.getElementById("password").value
   let p_pattern = /(?=.*\d.*)(?=.*[a-zA-Z].*)(?=.*[!#\$%&\?].*).{8,}/;

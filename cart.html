@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Like : cart</title>
+    <style>
+        @import url(css/bootstrap-icons.min.css);
+        @import url(css/bootstrap.min.css);
+        @import url(css/swiper-bundle.min.css);
+        @import url(css/fonts.css.css);
+        @import url(css/style.css);
+    </style>
+</head>
+
+<body>
+    <!-- header  -->
+    <div id="navbar"></div>
+    <section class="padding-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-9">
+                    <div class="col-12 p-2">
+                        <div class="border border-1 border-muted p-3">
+                            <p class="fs-2 fw-semibold text-capitalize">Your Life Like Cart is empty.</p>
+                            <p class="fs-5 fw-semibold text-capitalize m-0">Check your Saved for later items below or <a href="">continue shopping</a> .</p>
+                        </div>
+                    </div>
+                    <div class="col-12 p-2">
+                        <div class="border border-1 border-muted p-3">
+                            <p class="fs-4 fw-bold text-capitalize">Your items :</p>
+                            <div id="cart" class="row p-3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 p-2">
+                    <div class="rated-Product p-4 border border-1 border-muted">
+                        <h5 class="fw-bold text-capitalize"><span class=" text-primary fw-bold h4 pe-3"><i
+                                    class="bi bi-signpost"></i></span>Top Rated Product</h5>
+                        <div class="row align-items-center border-bottom border-1">
+                            <div class="col-4 position-relative my-4">
+                                <img src="img/p-26.jpg" alt="">
+                            </div>
+                            <div class="col-8">
+                                <h5 class="card-title fs-6 my-1 footer-hover"><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><span
+                                        class="text-muted"></span>
+                                </h5>
+                                <h6 class="fw-bold">HARMONY IN TROPICAL POT</h6>
+                                <p class="card-text text-uppercase fs-5 text-primary fw-bold"> $3593.00 <span
+                                        class="opacity-75 text-decoration-line-through">$4749.00</span></p>
+                            </div>
+                        </div>
+                        <div class="row align-items-center border-bottom border-1">
+                            <div class="col-4 position-relative my-4">
+                                <img src="img/p-18.jpg" alt="">
+                            </div>
+                            <div class="col-8">
+                                <h5 class="card-title fs-6 my-1 footer-hover"><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><span
+                                        class="text-muted"></span>
+                                </h5>
+                                <h6 class="fw-bold">CHARMING BLUEBIRD BAMBOO PLANT</h6>
+                                <p class="card-text text-uppercase fs-5 text-primary fw-bold"> $999.00 <span
+                                        class="opacity-75 text-decoration-line-through">$1249.00</span></p>
+                            </div>
+                        </div>
+                        <div class="row align-items-center border-bottom border-1">
+                            <div class="col-4 position-relative my-4">
+                                <img src="img/p-13.jpg" alt="">
+                            </div>
+                            <div class="col-8">
+                                <h5 class="card-title fs-6 my-1 footer-hover"><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><span
+                                        class="text-muted"></span>
+                                </h5>
+                                <h6 class="fw-bold">BLOOMING RED ROSE PLANT</h6>
+                                <p class="card-text text-uppercase fs-5 text-primary fw-bold"> $895.00 <span
+                                        class="opacity-75 text-decoration-line-through">$949.00</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Product-Categories p-4 border border-1 border-muted my-5">
+                        <h5 class="fw-bold"><span class=" text-primary fw-bold h4 pe-3"><i
+                                    class="bi bi-signpost"></i></span>Product
+                            Categories</h5>
+                        <ol class="list-unstyled">
+                            <li><a href="#"
+                                    class="fw-semibold text-decoration-none fs-6 text-capitalize footer-hover d-flex justify-content-between">
+                                    <p>body</p><i class="bi bi-caret-right-fill"></i>
+                                </a></li>
+                            <li><a href="#"
+                                    class="fw-semibold text-decoration-none fs-6 text-capitalize footer-hover d-flex justify-content-between">
+                                    <p>interior</p><i class="bi bi-caret-right-fill"></i>
+                                </a></li>
+                            <li><a href="#"
+                                    class="fw-semibold text-decoration-none fs-6 text-capitalize footer-hover d-flex justify-content-between">
+                                    <p>lights</p><i class="bi bi-caret-right-fill"></i>
+                                </a></li>
+                            <li><a href="#"
+                                    class="fw-semibold text-decoration-none fs-6 text-capitalize footer-hover d-flex justify-content-between">
+                                    <p>parts</p><i class="bi bi-caret-right-fill"></i>
+                                </a></li>
+                            <li><a href="#"
+                                    class="fw-semibold text-decoration-none fs-6 text-capitalize footer-hover d-flex justify-content-between">
+                                    <p>tires</p><i class="bi bi-caret-right-fill"></i>
+                                </a></li>
+                            <li><a href="#"
+                                    class="fw-semibold text-decoration-none fs-6 text-capitalize footer-hover d-flex justify-content-between">
+                                    <p>uncategorized</p><i class="bi bi-caret-right-fill"></i>
+                                </a></li>
+                            <li><a href="#"
+                                    class="fw-semibold text-decoration-none fs-6 text-capitalize footer-hover d-flex justify-content-between">
+                                    <p>wheel</p><i class="bi bi-caret-right-fill"></i>
+                                </a></li>
+                        </ol>
+                    </div>
+                    <div class="range p-4 border border-1 border-muted">
+                        <h5 class="fw-bold"><span class=" text-primary fw-bold h4 pe-3"><i
+                                    class="bi bi-signpost"></i></span>Filter
+                            By Price</h5>
+                        <p class="text-muted fw-semibold text-capitalize">your range:</p>
+                        <div class="slider-wrapper slider-gaia">
+                            <input class="input-range" id="priceRange" type="text" data-slider-step="1000"
+                                data-slider-value="4999, 9999" data-slider-min="4999" data-slider-max="20000"
+                                data-slider-range="true" data-slider-tooltip_split="true"
+                                data-slider-tooltip="always" />
+                        </div>
+                    </div>
+                    <div class="Search p-4 border border-1 border-muted my-5">
+                        <h5 class="fw-bold text-capitalize"><span class=" text-primary fw-bold h4 pe-3"><i
+                                    class="bi bi-signpost"></i></span>Search Objects</h5>
+                        <form action="">
+                            <div class="input-group mt-5">
+                                <input type="email" class="py-3 bg-skin rounded-0 fw-bold form-control"
+                                    placeholder="Search your keyword...">
+                                <button type="button" class=" btn btn-primary rounded-0 fw-bold"><i
+                                        class="bi bi-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                    <img src="img/cat-leftbanner-270x380.jpg" alt="" class="col-12">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script type="module" src="js/cart.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.7.0.js"></script>
+<script src="js/swiper-element-bundle.min.js"></script>
+
+</html>
